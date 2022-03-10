@@ -20,4 +20,8 @@ zcat wet.paths.gz > wet.paths
 ```bash
 ungoliant download ./wet.paths /gazelle/corpora/ungoliant/downloads/
 ```
-### ???
+### 2) Pipeline
+```bash
+cd /gazelle/corpora && RAYON_NUM_THREADS=30 ungoliant pipeline /gazelle/corpora/ungoliant/1_download/ /gazelle/corpora/ungoliant/2_pipeline --lid-path /root/projects/ungoliant-dioco/lid.176.bin
+```
+### 3) Dedup
